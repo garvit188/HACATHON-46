@@ -1,3 +1,15 @@
+export const APP_INFO = {
+  tagline: "Your Digital School Companion",
+  description:
+    "PIET Sanskriti Portal is the all-in-one digital platform for students, teachers, and administrators. Access announcements, events, gallery, report lost & found items, raise classroom issues — all from one place. Stay connected with your school, anytime, anywhere.",
+  features: [
+    "Announcements & Events",
+    "Photo Gallery",
+    "Lost & Found",
+    "Classroom Support",
+  ],
+} as const;
+
 export const SCHOOL_INFO = {
   name: "PIET Sanskriti School",
   tagline: "Join the Wave of Education 4.0",

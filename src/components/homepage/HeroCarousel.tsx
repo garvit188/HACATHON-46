@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { IMAGES, SCHOOL_INFO } from "@/lib/constants";
+import { IMAGES, SCHOOL_INFO, APP_INFO } from "@/lib/constants";
 
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0);
@@ -60,7 +60,7 @@ export default function HeroCarousel() {
                 animation: "heroSlideUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both",
               }}
             >
-              {SCHOOL_INFO.tagline}
+              {APP_INFO.tagline}
             </h1>
             <p
               className="mt-4 sm:mt-6 text-white/80 text-sm sm:text-base lg:text-lg max-w-lg transition-all"
@@ -68,7 +68,7 @@ export default function HeroCarousel() {
                 animation: "heroSlideUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both",
               }}
             >
-              {SCHOOL_INFO.about.slice(0, 120)}...
+              {APP_INFO.description.slice(0, 140)}...
             </p>
             <div
               className="mt-6 sm:mt-8 flex flex-wrap gap-3"
