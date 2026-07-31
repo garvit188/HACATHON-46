@@ -143,30 +143,6 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <div className="relative my-6">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-200" />
-            </div>
-            <div className="relative flex justify-center text-sm">
-              <span className="px-4 bg-white text-gray-500">or</span>
-            </div>
-          </div>
-
-          <div className="bg-gray-50 rounded-xl p-4 border border-gray-100">
-            <p className="text-xs text-gray-500 text-center mb-3">
-              Quick access for administrators
-            </p>
-            <button
-              type="button"
-              onClick={() => {
-                setFormData({ email: "admin@piet.com", password: "admin@qwerty" });
-              }}
-              className="w-full bg-white border border-gray-200 text-gray-700 py-2.5 px-4 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors"
-            >
-              Fill Admin Credentials
-            </button>
-          </div>
-
           <p className="text-center text-sm text-gray-500 mt-6">
             Don&apos;t have an account?{" "}
             <Link href="/signup" className="text-primary hover:underline font-medium">
