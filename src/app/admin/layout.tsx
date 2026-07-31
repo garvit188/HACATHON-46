@@ -146,10 +146,21 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <img src={IMAGES.logo} alt="PIET" className="h-8 w-auto brightness-0 invert" />
             <span className="text-sm font-bold">Admin</span>
           </Link>
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center text-white text-xs font-semibold">
-              {profile?.full_name?.[0] || "A"}
-            </div>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-white/60 hover:text-white hover:bg-white/10 rounded-lg transition-all"
+            >
+              <Home className="w-3.5 h-3.5" />
+              Home
+            </Link>
+            <button
+              onClick={handleLogout}
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-red-400 hover:text-red-300 hover:bg-white/10 rounded-lg transition-all"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+              Logout
+            </button>
           </div>
         </div>
       </header>

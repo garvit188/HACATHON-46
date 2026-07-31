@@ -136,10 +136,21 @@ export default function DashboardLayout({
               Portal
             </span>
           </Link>
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center text-white text-xs font-semibold">
-              {profile?.full_name?.[0] || "U"}
-            </div>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-all"
+            >
+              <Home className="w-3.5 h-3.5" />
+              Home
+            </Link>
+            <button
+              onClick={handleLogout}
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-red-500 hover:text-red-700 hover:bg-red-50 rounded-lg transition-all"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+              Logout
+            </button>
           </div>
         </div>
       </header>
