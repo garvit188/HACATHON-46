@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   title: "PIET Sanskriti School — Best CBSE School in Panipat",
   description:
     "PIET Sanskriti School, affiliated to CBSE (531840). Join the Wave of Education 4.0. Located in HUDA, Panipat, Haryana.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({
