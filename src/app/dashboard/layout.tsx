@@ -22,6 +22,7 @@ const sidebarLinks = [
   { label: "Events", href: "/dashboard/events", icon: Calendar },
   { label: "Gallery", href: "/dashboard/gallery", icon: Camera },
   { label: "Lost", href: "/dashboard/lost-found", icon: Package },
+  { label: "Issues", href: "/dashboard/problems", icon: AlertTriangle },
 ];
 
 export default function DashboardLayout({
@@ -157,7 +158,7 @@ export default function DashboardLayout({
 
       {/* Mobile Bottom Tab Bar */}
       <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-2xl border-t border-gray-200">
-        <div className="flex items-center justify-around h-[68px] px-1 pb-safe">
+        <div className="flex items-center justify-around h-[64px] px-0.5 pb-safe">
           {sidebarLinks.map((link) => {
             const Icon = link.icon;
             const isActive = pathname === link.href;
@@ -165,19 +166,19 @@ export default function DashboardLayout({
               <Link
                 key={link.href}
                 href={link.href}
-                className="flex flex-col items-center justify-center gap-1 w-16 h-full relative"
+                className="flex flex-col items-center justify-center gap-0.5 flex-1 h-full relative"
               >
                 <div
-                  className={`w-11 h-11 flex items-center justify-center rounded-2xl transition-all duration-300 ${
+                  className={`w-9 h-9 flex items-center justify-center rounded-xl transition-all duration-300 ${
                     isActive
                       ? "bg-gray-900 text-white scale-105 shadow-lg shadow-gray-900/20"
                       : "text-gray-400"
                   }`}
                 >
-                  <Icon className="w-5 h-5" strokeWidth={isActive ? 2.5 : 2} />
+                  <Icon className="w-4 h-4" strokeWidth={isActive ? 2.5 : 2} />
                 </div>
                 <span
-                  className={`text-[10px] font-medium transition-colors ${
+                  className={`text-[9px] font-medium transition-colors ${
                     isActive ? "text-gray-900" : "text-gray-400"
                   }`}
                 >
