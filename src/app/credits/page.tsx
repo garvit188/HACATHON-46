@@ -26,7 +26,7 @@ const team = [
   },
   {
     name: "Namish Saroha",
-    role: "Advisor & Tester",
+    role: "Product Ideation & QA Lead",
     classInfo: "Class 8-D, PIET Sanskriti School",
     description:
       "Served as a key advisor and quality tester throughout the development process. Provided valuable feedback on features, identified bugs, tested all pages and workflows, and helped ensure the final product meets the needs of students, teachers, and the school administration.",
